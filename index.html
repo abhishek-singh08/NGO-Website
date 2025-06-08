@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO</title>
+    <link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Navbar starts -->
+        <div class="row">
+            <div class="col-sm-12 p-0">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="#">Safe Child</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+            <li><a class="dropdown-item" href="#education">Education</a></li>
+            <li><a class="dropdown-item" href="#healthcare">HealthCare</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#empowerment">Child Empowerment</a></li>
+            <li><a class="dropdown-item" href="#livelihood">Livelihood</a></li>
+
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#get-involved">Get Involved</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+
+      <form class="d-flex me-2" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light" type="submit">Search</button>
+      </form>
+
+      <a href="#" class="btn btn-primary">Login</a>
+    </div>
+  </div>
+</nav>
+</div>
+</div>
+<!-- Nav bar ends -->
+
+<!-- Corousel Starts -->
+<div class="row">
+    <div class="col-sm-12 p-0">
+<div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+  </div>
+
+  <div class="carousel-inner">
+
+    <div class="carousel-item active" style="background-image: url('Images/pexels-themeditators-12181163.jpg');background-size: 100% 100%;">
+      <div class="carousel-overlay">
+        <div class="carousel-caption text-start">
+          <h1 class="animate__animated animate__fadeInDown" style="font-family: Vast Shadow, serif; font-size: 50px; color: rgb(147, 216, 216); font-style: italic;">A Brighter Future for Every Child</h1>
+          <p class="lead animate__animated animate__fadeInUp"style="font-family: Margarine, sans-serif;font-size:30px;font-style:italic; text-shadow:2px 2px 5px orange;">Together, we’re building nurturing environments that foster learning, health, and joy.</p>
+          <a href="#" class="btn btn-primary btn-lg mt-3">Get Involved</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item" style="background-image: url('Images/pexels-pixabay-70336.jpg'); background-size: 100% 100%;">
+      <div class="carousel-overlay">
+        <div class="carousel-caption text-center">
+          <h1 class="animate__animated animate__fadeInDown"style="font-family: Vast Shadow, serif; font-size: 50px; color: aqua;font-style: italic;">Healthcare at Their Doorstep</h1>
+          <p class="lead animate__animated animate__fadeInUp" style="font-family: Margarine, sans-serif;font-size:30px;font-style:italic; text-shadow: 2px 2px 5px salmon; ">Mobile clinics provide essential care to underserved communities.</p>
+          <a href="#" class="btn btn-outline-light btn-lg mt-3">Our Programmes</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item" style="background-image: url('Images/pexels-rebecca-zaal-252062-764681.jpg'); background-size: 100% 100%;">
+      <div class="carousel-overlay">
+        <div class="carousel-caption text-end">
+          <h1 class="animate__animated animate__fadeInDown"style="font-family: Vast Shadow, serif; font-size: 50px;color:aqua;font-style: italic;">Empower, Educate, Elevate</h1>
+          <p class="lead animate__animated animate__fadeInUp" style="font-family: Margarine, sans-serif;font-size:30px;font-style:italic; text-shadow: 2px 2px 5px orange; ">From skill-building to advocacy, we uplift children and families</p>
+          <a href="#" class="btn btn-success btn-lg mt-3">Meet the Team</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </button>
+</div>
+
+    </div>
+</div>
+</div>
+<!-- Corousel Ends  -->
+<div class="container py-3">
+  <h2 class="mb-4 text-center fw-bold" style="font-family: Margarine, sans-serif; text-transform: uppercase; font-size: 50px; text-shadow: 2px 2px 5px violet;">Impact Highlights</h2>
+
+  <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel"  >
+    <div class="carousel-inner" >
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="row gx-4">
+          <div class="col-md-4">
+            
+            <div class="card h-100 shadow-sm"  style="box-shadow: 3px 3px 5px black;">
+              <img src="Images/pexels-pixabay-46259.jpg" class="card-img-top" alt="Project 1">
+              <div class="card-body"  style="box-shadow: 3px 3px 5px black;">
+                <h5 class="card-title" style="font-size: 50px; color: #9b59b6; text-shadow: 2px 2px 5px yellow; ">Empowering Young Minds</h5>
+                <p class="card-text" style="font-family: Bad Script, cursive; text-transform: capitalize; font-size: 23px; color: black;">
+                    Cutting-edge solutions for modern challenges in the digital world.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quod nihil explicabo praesentium, eius, atque accusamus veritatis quisquam saepe cum totam enim esse dignissimos maiores nesciunt sint fugit! Fugit, dignissimos.
+                    
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-none d-md-block"  style="box-shadow: 3px 3px 5px black;">
+            <div class="card h-100 shadow-sm">
+              <img src="Images/pexels-namo-deet-415436-1098769.jpg" class="card-img-top" alt="Project 2">
+              <div class="card-body">
+                <h5 class="card-title" style="font-size: 50px; color: #9b59b6; text-shadow: 2px 2px 5px yellow;">Nurturing Creativity</h5>
+                <p class="card-text"style="font-family: Bad Script, cursive; text-transform: capitalize; font-size: 23px; color: black;">
+                    Blending aesthetics and function to craft perfect user experiences.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam ut corporis sapiente, fuga autem, maxime amet nisi exercitationem recusandae, quibusdam architecto voluptas. Quis, exercitationem corporis inventore aspernatur facere delectus perspiciatis.
+                   
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-none d-md-block" style="box-shadow: 3px 3px 5px black;" >
+            <div class="card h-100 shadow-sm">
+              <img src="Images/pexels-hiteshchoudhary-1739842.jpg" class="card-img-top" alt="Project 3">
+              <div class="card-body">
+                <h5 class="card-title" style="font-size: 50px; color: #9b59b6; text-shadow: 2px 2px 5px yellow;">Growing Stronger Together</h5>
+                <p class="card-text"style="font-family: Bad Script, cursive; text-transform: capitalize; font-size: 23px; color: black;">
+                    Bringing together talents to achieve extraordinary outcomes.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, facere. Nesciunt natus nulla ex, reiciendis neque blanditiis maiores nam laborum saepe! Sunt, fugit.
+                    
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="row gx-4">
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="Images/pexels-denniz-futalan-339724-1344275.jpg" class="card-img-top" alt="Project 4">
+              <div class="card-body">
+                <h5 class="card-title" style="font-size: 50px; color: #9b59b6; text-shadow: 2px 2px 5px yellow;">Feeding Dreams with Healthy Meals</h5>
+                <p class="card-text" style="font-family: Bad Script, cursive; text-transform: capitalize; font-size: 23px; color: black;">
+                    Empowering startups with the tools and mentorship to grow fast.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A explicabo delectus ipsa reprehenderit.
+                   
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-none d-md-block"  style="box-shadow: 3px 3px 5px black;">
+            <div class="card h-100 shadow-sm">
+              <img src="Images/pexels-aj4xo-27597369.jpg" class="card-img-top" alt="Project 5">
+              <div class="card-body">
+                <h5 class="card-title" style="font-size: 50px; color: #9b59b6; text-shadow: 2px 2px 5px yellow;">Opening Doors to Learning</h5>
+                <p class="card-text" style="font-family: Bad Script, cursive; text-transform: capitalize; font-size: 23px; color: black;">
+                    Turning complex data into clear, actionable business insights.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sunt necessitatibus corporis suscipit maxime! Ad quos consequatur saepe doloribus nihil at consectetur iure natus!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-none d-md-block" >
+            <div class="card h-100 shadow-sm">
+              <img src="Images/pexels-krishna-sarode-264149680-13759377.jpg" class="card-img-top" alt="Project 6">
+              <div class="card-body">
+                <h5 class="card-title" style="font-size: 50px; color: #9b59b6; text-shadow: 2px 2px 5px yellow;">Building a Safe Haven for Every Child</h5>
+                <p class="card-text"style="font-family: Bad Script, cursive; text-transform: capitalize; font-size: 23px; color: black;" >
+                    Tailored software solutions that drive success and innovation.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod perferendis nulla molestias autem voluptate corporis 
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br>
+    <section id="get-involved" class="py-5 text-center" style="border: 3px solid olivedrab; border-radius: 15px; background-color: rgb(241, 232, 220);">
+  <div class="container">
+    <h2 class="fw-bold mb-4">Join Us in Making a Difference</h2>
+    <p class="mb-4">Whether you’re a donor, volunteer, or corporate partner—your support brings hope and transformation.</p>
+    <a href="#" class="btn btn-primary btn-lg mx-2">Donate Now</a>
+    <a href="#" class="btn btn-outline-secondary btn-lg mx-2">Become a Volunteer</a>
+  </div>
+</section>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+</div>
+
+<div class="container custom-section pb-4">
+  <div class="row align-items-center">
+    <!-- Text Column -->
+    <div class="col-md-6 mb-4 mb-md-0">
+      <h2 class="custom-heading" style="font-size: 50px;">Our Mission & Vision</h2>
+      <p class="custom-text" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; ">
+       At SafeChild NGO, we believe that every child deserves the chance to thrive, regardless of their background or circumstances. Since our founding in 2018, we’ve been on a steadfast mission to transform the lives of vulnerable children across India by breaking the cycle of poverty and neglect through education, healthcare, and empowerment.
+        <br> <br>
+We work tirelessly to create safe, nurturing environments where children not only survive but truly flourish. Our programs focus on:
+        <ul style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; ">
+            <li><b>Access to quality education </b> for out-of-school children and those in underserved communities.</li>
+            <li><b>Essential healthcare and nutrition,</b> ensuring every child is healthy, growing, and protected.</li>
+            <li><b>Empowerment through life skills,</b> creativity, and emotional support, helping children build confidence and resilience.</li>
+        </ul>
+        Over the years, SafeChild has touched the lives of <b>thousands of children</b>, working hand-in-hand with local communities, educators, healthcare workers, and volunteers. We believe that real change happens not just through charity—but by equipping children with the tools, knowledge, and love they need to shape their own futures.
+
+Together, we’re not just changing individual stories—we’re building <b>stronger, more compassionate communities </b>where every child has the opportunity to <b>learn, lead, and live with dignity.</b>
+      </p>
+      <a href="#" class="btn btn-dark mt-3">Learn More</a>
+    </div>
+    
+    <!-- Image Column -->
+    <div class="col-md-6 text-center">
+      <img src="Images/pexels-parijb-1427430.jpg" alt="Stylish Image" class="img-fluid">
+    </div>
+  </div>
+</div>
+
+
+<section class="py-5 bg-white">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5 display-6">OUR PROGRAMMES</h2>
+    <div class="row gy-5">
+
+      <!-- Education -->
+      <div class="col-md-6 d-flex align-items-start">
+        <img src="Images/logo/pexels-pixabay-159866.jpg" class="me-3" alt="Education Icon" height="60px" width="50px">
+        <div>
+          <h5 class="fw-bold text-warning mb-1 border-bottom border-3 border-warning d-inline-block" style=" font-family: Modern Antiqua, serif;">EDUCATION</h5>
+          <p class="mb-0 text-muted" style="font-family: Offside, sans-serif;">We partner with schools to improve curriculum, distribute books & renovations, and support teachers in multi-grade classrooms</p>
+        </div>
+      </div>
+
+      <!-- Healthcare -->
+      <div class="col-md-6 d-flex align-items-start">
+        <img src="Images/logo/pexels-pixabay-40568.jpg" class="me-3" alt="Healthcare Icon"  height="60px" width="50px">
+        <div>
+          <h5 class="fw-bold text-purple mb-1 border-bottom border-3 border-purple d-inline-block"style=" font-family: Modern Antiqua, serif;">HEALTHCARE</h5>
+          <p class="mb-0 text-muted"style="font-family: Offside, sans-serif;" >We operate mobile health clinics staffed by doctors and nurses, delivering vaccinations, check-ups, and maternal care in remote regions</p>
+        </div>
+      </div>
+
+      <!-- Women Empowerment -->
+      <div class="col-md-6 d-flex align-items-start">
+        <img src="Images/logo/pexels-pixabay-47080.jpg" class="me-3" alt="Women Empowerment Icon" height="60px" width="50px">
+        <div>
+          <h5 class="fw-bold text-info mb-1 border-bottom border-3 border-info d-inline-block" style=" font-family: Modern Antiqua, serif;">CHILD EMPOWERMENT</h5>
+          <p class="mb-0 text-muted" style="font-family: Offside, sans-serif;">We run peer‑mentorship programs, extracurricular clubs, and leadership camps to nurture resilience and confidence in children and teens</p>
+        </div>
+      </div>
+
+      <!-- Livelihood -->
+      <div class="col-md-6 d-flex align-items-start">
+        <img src="Images/logo/pexels-paggiarofrancesco-1117862.jpg" class="me-3" alt="Livelihood Icon" height="60px" width="50px" >
+        <div>
+          <h5 class="fw-bold text-secondary mb-1 border-bottom border-3 border-secondary d-inline-block" style=" font-family: Modern Antiqua, serif;">LIVELIHOOD</h5>
+          <p class="mb-0 text-muted"style="font-family: Offside, sans-serif; ">We teach vocational skills—tailoring, carpentry, digital literacy—to young adults and connect them with job placements or micro-credit opportunities.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <!-- Column 1 -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-white">SafeChild</h5>
+        <p>We are dedicated to empowering children and communities through education, healthcare, and livelihood programs. Follow us to see our impact and stories in action.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="col-md-4 mb-4">
+        <h6 class="text-white">Quick Links</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">Who We Are</a></li>
+          <li><a href="#">Our Programmes</a></li>
+          <li><a href="#">Get Involved</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="col-md-4 mb-4">
+        <h6 class="text-white">Contact</h6>
+        <p><i class="fas fa-map-marker-alt me-2"></i>Uttar Pradesh, India</p>
+        <p><i class="fas fa-envelope me-2"></i>hello@safechild.org</p>
+        <p><i class="fas fa-phone me-2"></i>+91 98765 43210</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom text-center text-muted">
+    <p style="color: white; font-size: 20px; font-style: italic; " >2025 @ SafeChild NGO. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
